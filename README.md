@@ -12,3 +12,7 @@ Other possible resources:
 - [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 
 ## Progress
+
+| Day | Description |
+|----:|:------------|
+|   1 | Rust "Hello, world!" and learned about the key `cargo` commands |
