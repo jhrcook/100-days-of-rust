@@ -7,9 +7,10 @@
 
 from pathlib import Path
 from typing import Annotated
+
+import sh
 import typer
 from loguru import logger
-import sh
 
 app = typer.Typer(add_completion=False, rich_markup_mode="rich")
 
