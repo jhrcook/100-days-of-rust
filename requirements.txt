@@ -1,0 +1,7 @@
+typer[all]
+loguru
+bpython
+sh
+black
+isort
+mypy

@@ -16,3 +16,4 @@ Other possible resources:
 | Day | Description |
 |----:|:------------|
 |   1 | Rust "Hello, world!" and learned about the key `cargo` commands |
+<!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
