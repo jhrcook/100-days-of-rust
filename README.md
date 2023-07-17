@@ -16,4 +16,5 @@ Other possible resources:
 | Day | Description |
 |----:|:------------|
 |   1 | Rust "Hello, world!" and learned about the key `cargo` commands |
+|   2 | Learned about variables, type conversion, and the match statement |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->

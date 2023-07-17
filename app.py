@@ -40,7 +40,7 @@ def update_readme(msg: str) -> int:
         lines = f.readlines()
     i = _get_next_line_insertion_index(lines)
     day_num = _extract_last_day_num(lines[i - 1]) + 1
-    new_line = f"| {day_num: 3d} | {msg} |\n"
+    new_line = f"| {day_num: 3d} | {msg.capitalize()} |\n"
     lines.insert(i, new_line)
     write_lines = typer.confirm("Write new line to README?", default=True)
     if write_lines:
