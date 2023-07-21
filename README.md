@@ -19,4 +19,5 @@ Other possible resources:
 |   2 | Learned about variables, type conversion, and the match statement |
 |   3 | Learned about 'loop' and 'match' keywords; read about basics of variables and functions |
 |   4 | Finished up control flow syntax and began learning about ownership |
+|   5 | Finshed chapter 4 on ownership |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
