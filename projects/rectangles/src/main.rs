@@ -13,7 +13,24 @@ impl Rectangle {
 
 impl Rectangle {
     fn width(&self) -> bool {
-        self.width() > 0
+        self.width > 0
+    }
+}
+
+// Method that takes additional arguments.
+impl Rectangle {
+    fn can_hold(&self, other_rect: &Rectangle) -> bool {
+        other_rect.height < self.height && other_rect.width < self.width
+    }
+}
+
+// Associated function that is not a method.
+impl Rectangle {
+    fn square(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
     }
 }
 
@@ -37,6 +54,24 @@ fn main() {
     }
 
     println!("Area of rectangle: {rect_area}", rect_area = r1.area());
+
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    let rect2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+    let rect3 = Rectangle {
+        width: 60,
+        height: 45,
+    };
+    println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
+    println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
+
+    let sq = Rectangle::square(3);
+    println!("My new square: {:?}", sq)
 }
 
 fn area(rect: &Rectangle) -> u32 {

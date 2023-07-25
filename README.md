@@ -21,4 +21,5 @@ Other possible resources:
 |   4 | Finished up control flow syntax and began learning about ownership |
 |   5 | Finshed chapter 4 on ownership |
 |   6 | Started learning about structs |
+|   7 | Finished up the basics of structs and now moving on to enums |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
