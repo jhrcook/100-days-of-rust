@@ -22,4 +22,5 @@ Other possible resources:
 |   5 | Finshed chapter 4 on ownership |
 |   6 | Started learning about structs |
 |   7 | Finished up the basics of structs and now moving on to enums |
+|   8 | Wrapped up enums and option<t>, began learning more details about creates, etc. |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->

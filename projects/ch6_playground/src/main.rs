@@ -16,12 +16,16 @@ fn main() {
     let loopback = IpAdderKind::V6(String::from("::1"));
 
     // `Option` enum.
-    let x: i8 = 5;
-    let y: Option<i8> = Some(5);
+    let x: i32 = 5;
+    let y: Option<i32> = Some(5);
     // println!("x == y?: {}", x == y);  // DOES NOT WORK!
 
     // Coins in a match statement.
     println!("Value of a penny: {}", value_in_cents(&Coin::Penny));
+
+    // Matching on Option<T>.
+    // let x_plus1 = plus_one(x);
+    let y_plus1 = plus_one(y);
 }
 
 fn value_in_cents(coin: &Coin) -> u8 {
@@ -33,5 +37,12 @@ fn value_in_cents(coin: &Coin) -> u8 {
         Coin::Nickel => 5,
         Coin::Dime => 10,
         Coin::Quarter => 25,
+    }
+}
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
     }
 }
