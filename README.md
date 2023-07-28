@@ -24,4 +24,5 @@ Other possible resources:
 |   7 | Finished up the basics of structs and now moving on to enums |
 |   8 | Wrapped up enums and option<t>, began learning more details about creates, etc. |
 |   9 | More details about paths, scope, and public items |
+|  10 | Finished the chapter on crate and module structures |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
