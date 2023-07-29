@@ -68,6 +68,9 @@ def commit_to_git(msg: str, day_num: int, git_add_all: bool = True) -> None:
     else:
         logger.info("No git commit made.")
 
+    if typer.confirm("Psuh to origin?", default=True):
+        sh.git.push()
+
 
 @app.command()
 def main(

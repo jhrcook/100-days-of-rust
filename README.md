@@ -25,4 +25,5 @@ Other possible resources:
 |   8 | Wrapped up enums and option<t>, began learning more details about creates, etc. |
 |   9 | More details about paths, scope, and public items |
 |  10 | Finished the chapter on crate and module structures |
+|  11 | Experimented with the rust-bio crate |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
