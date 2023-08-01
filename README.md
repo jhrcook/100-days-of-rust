@@ -27,4 +27,5 @@ Other possible resources:
 |  10 | Finished the chapter on crate and module structures |
 |  11 | Experimented with the rust-bio crate |
 |  12 | Read the chapter on collections |
+|  13 | Started reading about exception handling |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
