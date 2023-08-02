@@ -28,4 +28,5 @@ Other possible resources:
 |  11 | Experimented with the rust-bio crate |
 |  12 | Read the chapter on collections |
 |  13 | Started reading about exception handling |
+|  14 | Finished reading about exceptions and now onto generics and traits |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
