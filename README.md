@@ -29,4 +29,5 @@ Other possible resources:
 |  12 | Read the chapter on collections |
 |  13 | Started reading about exception handling |
 |  14 | Finished reading about exceptions and now onto generics and traits |
+|  15 | Read up on generics and now learning about traits |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
