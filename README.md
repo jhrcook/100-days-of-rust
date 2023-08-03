@@ -30,4 +30,5 @@ Other possible resources:
 |  13 | Started reading about exception handling |
 |  14 | Finished reading about exceptions and now onto generics and traits |
 |  15 | Read up on generics and now learning about traits |
+|  16 | Began reading about generic lifetimes and lifetime annotation 🤯 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
