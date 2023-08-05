@@ -22,7 +22,7 @@ Other possible resources:
 |   5 | Finshed chapter 4 on ownership |
 |   6 | Started learning about structs |
 |   7 | Finished up the basics of structs and now moving on to enums |
-|   8 | Wrapped up enums and option<t>, began learning more details about creates, etc. |
+|   8 | Wrapped up enums and Option<t>, began learning more details about creates, etc. |
 |   9 | More details about paths, scope, and public items |
 |  10 | Finished the chapter on crate and module structures |
 |  11 | Experimented with the rust-bio crate |
@@ -31,4 +31,5 @@ Other possible resources:
 |  14 | Finished reading about exceptions and now onto generics and traits |
 |  15 | Read up on generics and now learning about traits |
 |  16 | Began reading about generic lifetimes and lifetime annotation 🤯 |
+|  17 | Played around with example code from the internet, just general practice |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
