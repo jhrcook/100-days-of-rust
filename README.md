@@ -9,6 +9,7 @@ To begin, I will be working through [*The Rust Programming Language* (2nd ed.)](
 
 Other possible resources:
 
+- [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
 - [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 
 ## Progress
@@ -32,4 +33,5 @@ Other possible resources:
 |  15 | Read up on generics and now learning about traits |
 |  16 | Began reading about generic lifetimes and lifetime annotation 🤯 |
 |  17 | Played around with example code from the internet, just general practice |
+|  18 | Finished reading the chapter on generics and lifetime annotations; worked through the chapter of rust by example on conversions |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
