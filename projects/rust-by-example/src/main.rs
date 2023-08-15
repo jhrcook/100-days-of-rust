@@ -1,6 +1,7 @@
 use std::convert::From;
 use std::convert::TryFrom;
 use std::fmt;
+use std::str::FromStr;
 
 fn main() {
     println!("Rust by Example!");
@@ -8,52 +9,29 @@ fn main() {
     println!("{}", line_break);
     ch6_conversion();
     println!("{}", line_break);
-    ch7_flow_of_control();
+    ch8_flow_of_control();
+    println!("{}", line_break);
+    ch9_functions();
     println!("{}", line_break);
 }
 
 // Chapter 6
-
-#[allow(dead_code)]
-#[derive(Debug)]
-struct Number {
-    value: i32,
-}
-
-impl From<i32> for Number {
-    fn from(item: i32) -> Self {
-        Number { value: item }
-    }
-}
-
-#[derive(Debug, PartialEq)]
-struct EvenNumber(i32);
-
-impl TryFrom<i32> for EvenNumber {
-    type Error = ();
-    fn try_from(value: i32) -> Result<Self, Self::Error> {
-        if value % 2 == 0 {
-            Ok(EvenNumber(value))
-        } else {
-            Err(())
-        }
-    }
-}
-
-struct Circle {
-    radius: i32,
-}
-
-impl fmt::Display for Circle {
-    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "Circule of radius{}", self.radius)
-    }
-}
-
 fn ch6_conversion() {
     println!("Chapter 6. Conversion");
 
     // `From` trait.
+    #[allow(dead_code)]
+    #[derive(Debug)]
+    struct Number {
+        value: i32,
+    }
+
+    impl From<i32> for Number {
+        fn from(item: i32) -> Self {
+            Number { value: item }
+        }
+    }
+
     let num = Number::from(30);
     println!("My number is {:?}", num);
 
@@ -63,6 +41,19 @@ fn ch6_conversion() {
     println!("My other number is {:?}", num);
 
     // `TryFrom` trait.
+    #[derive(Debug, PartialEq)]
+    struct EvenNumber(i32);
+
+    impl TryFrom<i32> for EvenNumber {
+        type Error = ();
+        fn try_from(value: i32) -> Result<Self, Self::Error> {
+            if value % 2 == 0 {
+                Ok(EvenNumber(value))
+            } else {
+                Err(())
+            }
+        }
+    }
     assert_eq!(EvenNumber::try_from(8), Ok(EvenNumber(8)));
     assert_eq!(EvenNumber::try_from(5), Err(()));
 
@@ -73,6 +64,16 @@ fn ch6_conversion() {
     assert_eq!(result, Err(()));
 
     // Converting to String by implementing the `ToString` trait through the `Display` trait.
+    struct Circle {
+        radius: i32,
+    }
+
+    impl fmt::Display for Circle {
+        fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+            write!(f, "Circule of radius{}", self.radius)
+        }
+    }
+
     let circle = Circle { radius: 6 };
     println!("{}", circle.to_string());
 
@@ -83,9 +84,9 @@ fn ch6_conversion() {
     println!("Turbofish parsed string: {}", turbo_parsed);
 }
 
-// Chapter 7
-fn ch7_flow_of_control() {
-    println!("Chapter 7. Flow of Control");
+// Chapter 8
+fn ch8_flow_of_control() {
+    println!("Chapter 8. Flow of Control");
 
     // if-else
     let n = 5;
@@ -188,5 +189,118 @@ fn ch7_flow_of_control() {
         Color::CYMK(a, b, c, d) => println!("CYMK color: ({},{},{},{})", a, b, c, d),
     }
 
-    // paused: https://doc.rust-lang.org/stable/rust-by-example/flow_control/match/destructuring/destructure_pointers.html
+    // guards
+    #[allow(dead_code)]
+    enum Temperature {
+        C(i32),
+        F(i32),
+    }
+    let temperature = Temperature::C(35);
+    match temperature {
+        Temperature::C(t) if t > 30 => println!("Temperature is above 30 C"),
+        Temperature::C(t) => println!("{} C is below 30 C", t),
+        Temperature::F(t) if t > 86 => println!("Temperature is above 86 F"),
+        Temperature::F(t) => println!("{} F is above 86 F", t),
+    }
+
+    // binding
+    fn age() -> u32 {
+        return 15;
+    }
+    match age() {
+        0 => println!("No birthdays yet"),
+        n @ 1..=12 => println!("Child of age {}", n),
+        n @ 13..=19 => println!("Teen of age {}", n),
+        n => println!("Adult of age {}", n),
+    }
+
+    // if-let
+    let number = Some(7);
+    if let Some(i) = number {
+        println!("Number is {:?}", i)
+    } else {
+        println!("Number is None")
+    }
+
+    // let-else
+    fn get_count_item(s: &str) -> (u64, &str) {
+        let mut it = s.split(' '); // split the string by ' '
+        let (Some(count_str), Some(item)) = (it.next(), it.next()) else {
+            panic!("Cannot segment count item pair: '{s}'");
+        };
+        let Ok(count) = u64::from_str(count_str) else {
+            panic!("Cannot parse integer: '{count_str}'");
+        };
+        (count, item)
+    }
+    assert_eq!(get_count_item("3 chairs"), (3, "chairs"));
+}
+
+fn ch9_functions() {
+    fn is_divisible_by(lhs: u32, rhs: u32) -> bool {
+        if rhs == 0 {
+            return false;
+        }
+        lhs % rhs == 0
+    }
+    fn fizzbuzz(n: u32) {
+        if is_divisible_by(n, 15) {
+            print!("fizzbuzz");
+        } else if is_divisible_by(n, 3) {
+            print!("fizz");
+        } else if is_divisible_by(n, 5) {
+            print!("buzz");
+        } else {
+            print!("{}", n);
+        }
+    }
+    fn fizzbuzz_to(n: u32) {
+        for n in 1..=n {
+            fizzbuzz(n);
+            print!(" ");
+        }
+        println!();
+    }
+    fizzbuzz_to(16);
+
+    // Closures
+    let outer_var = 42;
+    let closure_annotated = |i: i32| -> i32 { i + outer_var };
+    println!("closure_annotated: {}", closure_annotated(1));
+
+    let one = || 1;
+    println!("closure returing one: {}", one());
+
+    let color = String::from("green");
+    let print = || println!("`color`: {}", color);
+    print();
+    let _reborrow = &color;
+    print();
+    let _color_moved = color;
+    // print(); // can no longer use `color` so the `print()` closure breaks
+
+    let mut count = 0;
+    let mut inc = || {
+        count += 1;
+        println!("`count`: {}", count);
+    };
+    inc();
+    // let _reborrow = &count; // cannot borrow because there is already a mut ref in `inc()`
+    inc();
+
+    use std::mem;
+    let movable = Box::new(3);
+    let consume = || {
+        println!("`movable`: {:?}", movable);
+        mem::drop(movable);
+    };
+    consume();
+    // consume(); // `moveable` is consumed on the first call so cannot be called again
+
+    let haystack = vec![1, 2, 3]; // `Vec` has non-copy semantics
+    let contains = move |needle| haystack.contains(needle);
+    println!("haystack contains &1: {}", contains(&1));
+    println!("haystack contains &4: {}", contains(&4));
+    // The following is not allowed because ownership of `haystack` is in `contains()`.
+    // println!("there are {} elements in `haystack", haystack.len());
 }
