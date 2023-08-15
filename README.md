@@ -34,4 +34,5 @@ Other possible resources:
 |  16 | Began reading about generic lifetimes and lifetime annotation 🤯 |
 |  17 | Played around with example code from the internet, just general practice |
 |  18 | Finished reading the chapter on generics and lifetime annotations; worked through the chapter of rust by example on conversions |
+|  19 | Working through examples of flow control code just practising writing rust code |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
