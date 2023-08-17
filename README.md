@@ -11,6 +11,7 @@ Other possible resources:
 
 - [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
 - [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
+- [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
 
 ## Progress
 
@@ -23,7 +24,7 @@ Other possible resources:
 |   5 | Finshed chapter 4 on ownership |
 |   6 | Started learning about structs |
 |   7 | Finished up the basics of structs and now moving on to enums |
-|   8 | Wrapped up enums and Option<t>, began learning more details about creates, etc. |
+|   8 | Wrapped up enums and `Option<t>`, began learning more details about creates, etc. |
 |   9 | More details about paths, scope, and public items |
 |  10 | Finished the chapter on crate and module structures |
 |  11 | Experimented with the rust-bio crate |
@@ -36,4 +37,6 @@ Other possible resources:
 |  18 | Finished reading the chapter on generics and lifetime annotations; worked through the chapter of rust by example on conversions |
 |  19 | Working through examples of flow control code just practising writing rust code |
 |  20 | More practice with match and now working on examples with functions |
+|  21 | Finished the set of examples for functions and now playing with random number generation in the cookbook |
+|  22 | Finished the set of examples for functions and now playing with random number generation in the cookbook |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->

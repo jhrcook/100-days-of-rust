@@ -303,4 +303,36 @@ fn ch9_functions() {
     println!("haystack contains &4: {}", contains(&4));
     // The following is not allowed because ownership of `haystack` is in `contains()`.
     // println!("there are {} elements in `haystack", haystack.len());
+
+    // Higher order functions (HOF)
+    fn is_odd(n: u32) -> bool {
+        n % 2 == 1
+    }
+
+    // imperative style:
+    let upper = 1000;
+    let mut total = 0;
+    for n in 0.. {
+        let n_squared = n * n;
+        if n_squared >= upper {
+            break;
+        } else if is_odd(n) {
+            total += n_squared
+        }
+    }
+    println!("imperative style: {}", total);
+
+    // functional style (using functions as arguments over collections):
+    let sum_of_squared_odd_numbers: u32 = (0..)
+        .map(|n| n * n)
+        .take_while(|&n_squared| n_squared < upper)
+        .filter(|&n_squared| is_odd(n_squared))
+        .sum();
+    println!("functional style: {}", sum_of_squared_odd_numbers);
+
+    // Diverging functions
+    #[allow(dead_code)]
+    fn foo() -> ! {
+        panic!("This call never returns 🙃")
+    }
 }
