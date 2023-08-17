@@ -39,4 +39,5 @@ Other possible resources:
 |  20 | More practice with match and now working on examples with functions |
 |  21 | Finished the set of examples for functions and now playing with random number generation in the cookbook |
 |  22 | Finished the set of examples for functions and now playing with random number generation in the cookbook |
+|  23 | Played with the `rand` and `rand_distr` crates using examples from the cookbook |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
