@@ -6,5 +6,10 @@
 		{
 			"path": "rust-cookbook-generate-random-values"
 		}
-	]
+	],
+	"settings": {
+		"cSpell.words": [
+			"turbofish"
+		]
+	}
 }

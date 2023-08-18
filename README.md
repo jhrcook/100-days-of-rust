@@ -40,4 +40,5 @@ Other possible resources:
 |  21 | Finished the set of examples for functions and now playing with random number generation in the cookbook |
 |  22 | Finished the set of examples for functions and now playing with random number generation in the cookbook |
 |  23 | Played with the `rand` and `rand_distr` crates using examples from the cookbook |
+|  24 | Experimented with the concurrency examples in the cookbook |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
