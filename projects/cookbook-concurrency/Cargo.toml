@@ -8,5 +8,8 @@ edition = "2021"
 [dependencies]
 crossbeam = "0.8.2"
 crossbeam-channel = "0.5.8"
+error-chain = "0.12.4"
+glob = "0.3.1"
+image = "0.24.7"
 rand = "0.8.5"
 rayon = "1.7.0"

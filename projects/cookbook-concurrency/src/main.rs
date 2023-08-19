@@ -4,12 +4,25 @@ extern crate crossbeam;
 extern crate crossbeam_channel;
 
 use crossbeam_channel::bounded;
+use error_chain::error_chain;
+use error_chain::ChainedError;
+use glob::{glob_with, MatchOptions};
+use image::{imageops::FilterType, ImageError};
 use rand::{distributions::Alphanumeric, Rng};
 use rayon::{
     prelude::{IntoParallelRefIterator, IntoParallelRefMutIterator, ParallelIterator},
     slice::ParallelSliceMut,
 };
-use std::{thread, time::Duration};
+use std::path::PathBuf;
+use std::{fs::create_dir_all, path::Path, thread, time::Duration};
+
+error_chain! {
+    foreign_links {
+        Image(ImageError);
+        Io(std::io::Error);
+        Glob(glob::PatternError);
+    }
+}
 
 fn main() {
     let funcs = [
@@ -20,8 +33,14 @@ fn main() {
         sort_vector_in_parallel,
     ];
     for func in funcs.iter() {
-        func()
+        func();
+        println!("–––––––––––––––––––––––––––––––––––––––");
     }
+    match jpeg_thumbnails_in_parallel() {
+        Ok(_) => println!("Successfully made thumbnails."),
+        Err(x) => println!("Errored while making thumbnails: {}", x),
+    };
+    println!("–––––––––––––––––––––––––––––––––––––––");
 }
 
 fn spawn_a_shortlived_thread() {
@@ -112,7 +131,46 @@ fn sort_vector_in_parallel() {
     vec.par_sort_unstable();
 }
 
-fn jpeg_thumbnails_in_parallel() {
-    // TODO
-    // https://rust-lang-nursery.github.io/rust-cookbook/concurrency/parallel.html#generate-jpg-thumbnails-in-parallel
+fn jpeg_thumbnails_in_parallel() -> Result<()> {
+    let options: MatchOptions = Default::default();
+    let files: Vec<PathBuf> = glob_with("*.jpg", options)?
+        .filter_map(|x| x.ok())
+        .collect();
+
+    if files.len() == 0 {
+        error_chain::bail!("No JPEG files found in current directory.");
+    }
+
+    let thumb_dir = "thumbnails";
+    create_dir_all(thumb_dir)?;
+
+    println!("Saving {} thumbnails into '{}'...", files.len(), thumb_dir);
+
+    let image_failures: Vec<_> = files
+        .par_iter()
+        .map(|path| {
+            make_thumbnail(path, thumb_dir, 300)
+                .map_err(|e| e.chain_err(|| path.display().to_string()))
+        })
+        .filter_map(|x| x.err())
+        .collect();
+
+    println!("Failed images:");
+    image_failures
+        .iter()
+        .for_each(|x| println!(" {}", x.display_chain()));
+    println!("{} thumbnails created.", files.len() - image_failures.len());
+    Ok(())
+}
+
+fn make_thumbnail<PA, PB>(original: PA, thumb_dir: PB, longest_edge: u32) -> Result<()>
+where
+    PA: AsRef<Path>,
+    PB: AsRef<Path>,
+{
+    let img = image::open(original.as_ref())?;
+    let file_path = thumb_dir.as_ref().join(original);
+    Ok(img
+        .resize(longest_edge, longest_edge, FilterType::Nearest)
+        .save(file_path)?)
 }

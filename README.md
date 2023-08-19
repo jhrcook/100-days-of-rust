@@ -48,4 +48,5 @@ To play with:
 |  22 | Finished the set of examples for functions and now playing with random number generation in the cookbook |
 |  23 | Played with the `rand` and `rand_distr` crates using examples from the cookbook |
 |  24 | Experimented with the concurrency examples in the cookbook |
+|  25 | More examples with concurrency that gave me a good opporunity to learn about the "error-chain" crate |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
