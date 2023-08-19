@@ -13,6 +13,13 @@ Other possible resources:
 - [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 - [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
 
+To play with:
+
+- [Rapier](https://rapier.rs/) physics engine
+- [Bevy](https://bevyengine.org/) game engine
+- [ndarray](https://docs.rs/ndarray/latest/ndarray/#)
+- web scraping
+
 ## Progress
 
 | Day | Description |
