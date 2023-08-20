@@ -49,4 +49,6 @@ To play with:
 |  23 | Played with the `rand` and `rand_distr` crates using examples from the cookbook |
 |  24 | Experimented with the concurrency examples in the cookbook |
 |  25 | More examples with concurrency that gave me a good opporunity to learn about the "error-chain" crate |
+|  26 | Learning about the "ndarray" crate |
+|  27 | Learning about the "ndarray" crate |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
