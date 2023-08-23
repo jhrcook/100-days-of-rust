@@ -2,7 +2,7 @@ extern crate approx;
 extern crate ndarray;
 
 use approx::assert_abs_diff_eq;
-use ndarray::{arr1, arr2, Array, Array1};
+use ndarray::{arr1, arr2, array, Array, Array1, ArrayView1};
 
 fn main() {
     let functions = [
@@ -67,7 +67,23 @@ fn vector_comparison() {
     assert_abs_diff_eq!(w, Array::from(vec![6., 6., 6., 6., 6.]));
 }
 
+fn l1_norm(x: ArrayView1<f64>) -> f64 {
+    x.fold(0., |acc, elem| acc + elem.abs())
+}
+
+fn l2_nrom(x: ArrayView1<f64>) -> f64 {
+    x.dot(&x).sqrt()
+}
+
+fn normalize(mut x: Array1<f64>) -> Array1<f64> {
+    let norm = l2_nrom(x.view());
+    x.mapv_inplace(|e| e / norm);
+    return x;
+}
+
 fn vector_normalization() {
-
-
+    let x = array![1., 2., 3., 4., 5.];
+    println!("||x||_2 = {}", l2_nrom(x.view()));
+    println!("||x||_1 = {}", l1_norm(x.view()));
+    println!("Normalizing x: {}", normalize(x))
 }

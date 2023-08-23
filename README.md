@@ -51,4 +51,5 @@ To play with:
 |  25 | More examples with concurrency that gave me a good opporunity to learn about the "error-chain" crate |
 |  26 | Learning about the "ndarray" crate |
 |  27 | Learning about the "ndarray" crate |
+|  28 | Finished the examples with "ndarray" and practiced some web requests including with async |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
