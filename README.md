@@ -52,4 +52,5 @@ To play with:
 |  26 | Learning about the "ndarray" crate |
 |  27 | Learning about the "ndarray" crate |
 |  28 | Finished the examples with "ndarray" and practiced some web requests including with async |
+|  29 | Began working through the rust cli cookbook |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
