@@ -54,4 +54,5 @@ To play with:
 |  28 | Finished the examples with "ndarray" and practiced some web requests including with async |
 |  29 | Began working through the rust cli cookbook |
 |  30 | Trying to refactor and test the simple cl tool |
+|  31 | Succesfully refactored some of the demo cli tool to enable testing and added a unit test and two integration tests |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
