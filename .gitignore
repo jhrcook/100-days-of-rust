@@ -241,3 +241,6 @@ Cargo.lock
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,rust,python
+
+
+./projects/omnivore-api-demo/secrets.yaml
