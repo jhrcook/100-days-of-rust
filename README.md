@@ -57,4 +57,5 @@ To play with:
 |  31 | Succesfully refactored some of the demo cli tool to enable testing and added a unit test and two integration tests |
 |  32 | Started a new simple project to query the omnivore api |
 |  33 | Started a new simple project to query the omnivore api |
+|  34 | Started chapter 13 of the book on functional programming in rust and revisited the chapter on generics, traits, and lifetimes |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
