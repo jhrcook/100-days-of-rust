@@ -59,4 +59,5 @@ To play with:
 |  33 | Started a new simple project to query the omnivore api |
 |  34 | Started chapter 13 of the book on functional programming in rust and revisited the chapter on generics, traits, and lifetimes |
 |  35 | Converted a web-scraping project from python to rust, builst some some aws s3 interactions in rust for a work project |
+|  36 | Worked on getting the trout stocking web-scraping code onto deta and writing to the provided database |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
