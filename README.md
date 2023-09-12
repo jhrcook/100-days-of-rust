@@ -61,4 +61,5 @@ To play with:
 |  35 | Converted a web-scraping project from python to rust, builst some some aws s3 interactions in rust for a work project |
 |  36 | Worked on getting the trout stocking web-scraping code onto deta and writing to the provided database |
 |  37 | Refactored my trout stocking code into binary and library and used axum to make a server interface |
+|  38 | Working on getting my trout stocking scraping app deployed to deta space |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
