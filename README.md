@@ -62,4 +62,5 @@ To play with:
 |  36 | Worked on getting the trout stocking web-scraping code onto deta and writing to the provided database |
 |  37 | Refactored my trout stocking code into binary and library and used axum to make a server interface |
 |  38 | Working on getting my trout stocking scraping app deployed to deta space |
+|  39 | Continued working on deplying my trout scraping deta app, now trying to use github actions to compile |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
