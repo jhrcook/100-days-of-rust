@@ -64,4 +64,5 @@ To play with:
 |  38 | Working on getting my trout stocking scraping app deployed to deta space |
 |  39 | Continued working on deplying my trout scraping deta app, now trying to use github actions to compile |
 |  40 | Read about logging and tracing in rust and added logging to my app |
+|  41 | Refactored the data scraping micro into a workspace to separate the scraping logic from the web-server front-end for deta |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
