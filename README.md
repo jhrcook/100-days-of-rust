@@ -66,4 +66,5 @@ To play with:
 |  40 | Read about logging and tracing in rust and added logging to my app |
 |  41 | Refactored the data scraping micro into a workspace to separate the scraping logic from the web-server front-end for deta |
 |  42 | Add an index data base to my trout stocking deta space project |
+|  43 | End point to initiate re-indexing of data bases periodically |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
