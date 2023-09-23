@@ -67,4 +67,5 @@ To play with:
 |  41 | Refactored the data scraping micro into a workspace to separate the scraping logic from the web-server front-end for deta |
 |  42 | Add an index data base to my trout stocking deta space project |
 |  43 | End point to initiate re-indexing of data bases periodically |
+|  44 | Reduced code duplication and complexity by using traits and enums in my trout scraping project |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
