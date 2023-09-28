@@ -69,4 +69,5 @@ To play with:
 |  43 | End point to initiate re-indexing of data bases periodically |
 |  44 | Reduced code duplication and complexity by using traits and enums in my trout scraping project |
 |  45 | Refactored more code for the trout data scraping project |
+|  46 | Started working through the 'rustlings' problems |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
