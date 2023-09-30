@@ -70,4 +70,5 @@ To play with:
 |  44 | Reduced code duplication and complexity by using traits and enums in my trout scraping project |
 |  45 | Refactored more code for the trout data scraping project |
 |  46 | Started working through the 'rustlings' problems |
+|  47 | Continued with rustlings practice |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
