@@ -71,4 +71,5 @@ To play with:
 |  45 | Refactored more code for the trout data scraping project |
 |  46 | Started working through the 'rustlings' problems |
 |  47 | Continued with rustlings practice |
+|  48 | Continued with rustlings practice (strings, hashmaps, modules, quiz 2) |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
