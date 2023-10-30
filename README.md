@@ -72,4 +72,5 @@ To play with:
 |  46 | Started working through the 'rustlings' problems |
 |  47 | Continued with rustlings practice |
 |  48 | Continued with rustlings practice (strings, hashmaps, modules, quiz 2) |
+|  49 | Continued with rustlings practice (options and error handling) |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
