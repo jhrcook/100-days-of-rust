@@ -74,4 +74,5 @@ To play with:
 |  48 | Continued with rustlings practice (strings, hashmaps, modules, quiz 2) |
 |  49 | Continued with rustlings practice (options and error handling) |
 |  50 | Continued with rustlings practice (generics, trains, quiz 3) |
+|  51 | Rustlings on lifetimes and tests, also setup advent of code 2022 in rust project |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
