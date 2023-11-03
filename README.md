@@ -75,4 +75,5 @@ To play with:
 |  49 | Continued with rustlings practice (options and error handling) |
 |  50 | Continued with rustlings practice (generics, trains, quiz 3) |
 |  51 | Rustlings on lifetimes and tests, also setup advent of code 2022 in rust project |
+|  52 | Rustlings iterators (took me a little while because the editor doesnt provide syntax help) |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
