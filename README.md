@@ -76,4 +76,5 @@ To play with:
 |  50 | Continued with rustlings practice (generics, trains, quiz 3) |
 |  51 | Rustlings on lifetimes and tests, also setup advent of code 2022 in rust project |
 |  52 | Rustlings iterators (took me a little while because the editor doesnt provide syntax help) |
+|  53 | Advent of code 2022 day 3 puzzles - a lot of practice with iterators |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
