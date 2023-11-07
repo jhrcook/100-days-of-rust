@@ -78,4 +78,6 @@ To play with:
 |  52 | Rustlings iterators (took me a little while because the editor doesnt provide syntax help) |
 |  53 | Advent of code 2022 day 3 puzzles - a lot of practice with iterators |
 |  54 | Advent of code 2022 day 4 puzzles |
+|  55 | Advent of code 2022 day 5 puzzle 1 gave me a lot of practice with parsing the input data |
+|  56 | Advent of code 2022 day 5 puzzle 1 gave me a lot of practice with parsing the input data |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->

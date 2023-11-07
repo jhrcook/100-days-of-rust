@@ -26,7 +26,7 @@ def _extract_last_day_num(text: str) -> int:
     return int(text.split("|")[1].strip())
 
 
-def update_readme(msg: str) -> int:
+def update_readme(msg: str, skip_confirm: bool = False) -> int:
     """Update the README with today's activity.
 
     Args:
@@ -42,7 +42,9 @@ def update_readme(msg: str) -> int:
     day_num = _extract_last_day_num(lines[i - 1]) + 1
     new_line = f"| {day_num: 3d} | {msg.capitalize()} |\n"
     lines.insert(i, new_line)
-    write_lines = typer.confirm("Write new line to README?", default=True)
+    write_lines = skip_confirm or typer.confirm(
+        "Write new line to README?", default=True
+    )
     if write_lines:
         with open("README.md", "w") as f:
             f.writelines(lines)
@@ -51,7 +53,9 @@ def update_readme(msg: str) -> int:
     return day_num
 
 
-def commit_to_git(msg: str, day_num: int, git_add_all: bool = True) -> None:
+def commit_to_git(
+    msg: str, day_num: int, git_add_all: bool = True, skip_confirm: bool = False
+) -> None:
     """Make a git commit.
 
     Args:
@@ -62,13 +66,15 @@ def commit_to_git(msg: str, day_num: int, git_add_all: bool = True) -> None:
         sh.git.add("--all")
     print(sh.git.status())
     commit_msg = f"day {day_num}: {msg.strip()}"
-    make_commit = typer.confirm(f"Make git commit? '{commit_msg}'", default=True)
+    make_commit = skip_confirm or typer.confirm(
+        f"Make git commit? '{commit_msg}'", default=True
+    )
     if make_commit:
         sh.git.commit("-m", msg.strip())
     else:
         logger.info("No git commit made.")
 
-    if make_commit and typer.confirm("Push to origin?", default=True):
+    if make_commit and (skip_confirm or typer.confirm("Push to origin?", default=True)):
         sh.git.push()
 
 
@@ -82,12 +88,13 @@ def main(
             help="No additions to git staging (defaults to adding all changes.)",
         ),
     ] = False,
+    yes: Annotated[bool, typer.Option("--yes", is_flag=True, flag_value=True)] = False,
 ) -> None:
     """[b]Log a day of 100 Days of Rust.[b]"""
     logger.info("Updating README.")
-    day_num = update_readme(msg)
+    day_num = update_readme(msg, skip_confirm=yes)
     logger.info(f"Making git commit for day {day_num}.")
-    commit_to_git(msg, day_num=day_num, git_add_all=not no_git_add)
+    commit_to_git(msg, day_num=day_num, git_add_all=not no_git_add, skip_confirm=yes)
 
 
 if __name__ == "__main__":
