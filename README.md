@@ -81,4 +81,5 @@ To play with:
 |  55 | Advent of code 2022 day 5 puzzle 1 gave me a lot of practice with parsing the input data |
 |  56 | Advent of code 2022 day 5 puzzle 1 gave me a lot of practice with parsing the input data |
 |  57 | Advent of code 2022 day 6 puzzle was actually easy, giving me some confidence |
+|  58 | Started puzzle 7 for advent of code 2022 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
