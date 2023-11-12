@@ -84,4 +84,5 @@ To play with:
 |  58 | Started puzzle 7 for advent of code 2022 |
 |  59 | Working example for puzzle 7, but run time error |
 |  60 | Refactoring puzzle 7, but still got the same error; i think i know what the problem is though |
+|  61 | Solved puzzle 7 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
