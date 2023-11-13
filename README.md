@@ -85,4 +85,5 @@ To play with:
 |  59 | Working example for puzzle 7, but run time error |
 |  60 | Refactoring puzzle 7, but still got the same error; i think i know what the problem is though |
 |  61 | Solved puzzle 7 |
+|  62 | Solved puzzle 8 and it runs way faster with `--release` |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
