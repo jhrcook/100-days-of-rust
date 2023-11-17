@@ -87,4 +87,5 @@ To play with:
 |  61 | Solved puzzle 7 |
 |  62 | Solved puzzle 8 and it runs way faster with `--release` |
 |  63 | Parsed the input for puzzle 9 of aoc 2022 |
+|  64 | Finished both puzzles for day 9 of aoc 2022 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
