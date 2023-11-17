@@ -86,4 +86,5 @@ To play with:
 |  60 | Refactoring puzzle 7, but still got the same error; i think i know what the problem is though |
 |  61 | Solved puzzle 7 |
 |  62 | Solved puzzle 8 and it runs way faster with `--release` |
+|  63 | Parsed the input for puzzle 9 of aoc 2022 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
