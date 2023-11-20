@@ -88,7 +88,9 @@ def main(
             help="No additions to git staging (defaults to adding all changes.)",
         ),
     ] = False,
-    yes: Annotated[bool, typer.Option("--yes", is_flag=True, flag_value=True)] = False,
+    yes: Annotated[
+        bool, typer.Option("--yes", "-y", is_flag=True, flag_value=True)
+    ] = False,
 ) -> None:
     """[b]Log a day of 100 Days of Rust.[b]"""
     logger.info("Updating README.")
