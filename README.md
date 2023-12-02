@@ -86,8 +86,11 @@ To play with:
 |  60 | Refactoring puzzle 7, but still got the same error; i think i know what the problem is though |
 |  61 | Solved puzzle 7 |
 |  62 | Solved puzzle 8 and it runs way faster with `--release` |
-|  63 | Parsed the input for puzzle 9 of aoc 2022 |
-|  64 | Finished both puzzles for day 9 of aoc 2022 |
-|  65 | Parsed input and prepared key models for puzzles of day 10 of aoc 2022 |
-|  66 | Finished puzzles for day 10 of aoc 2022 |
+|  63 | Parsed the input for puzzle 9 of AoC 2022 |
+|  64 | Finished both puzzles for day 9 of AoC 2022 |
+|  65 | Parsed input and prepared key models for puzzles of day 10 of AoC 2022 |
+|  66 | Finished puzzles for day 10 of AoC 2022 |
+|  67 | Finished puzzles for day 11 of AoC 2022 but had to look up the hint for part 2 |
+|  68 | Finished puzzles for day 12 of AoC 2022 |
+|  69 | Start Advent of Code 2023 in Rust |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
