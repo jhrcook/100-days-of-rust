@@ -93,4 +93,5 @@ To play with:
 |  67 | Finished puzzles for day 11 of AoC 2022 but had to look up the hint for part 2 |
 |  68 | Finished puzzles for day 12 of AoC 2022 |
 |  69 | Start Advent of Code 2023 in Rust |
+|  70 | Day 2 of aoc 2023 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
