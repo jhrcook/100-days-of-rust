@@ -95,4 +95,5 @@ To play with:
 |  69 | Start Advent of Code 2023 in Rust |
 |  70 | Day 2 of aoc 2023 |
 |  71 | Day 3 of aoc 2023 |
+|  72 | Day 4 of aoc 2023 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
