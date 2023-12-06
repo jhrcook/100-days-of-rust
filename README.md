@@ -96,4 +96,5 @@ To play with:
 |  70 | Day 2 of aoc 2023 |
 |  71 | Day 3 of aoc 2023 |
 |  72 | Day 4 of aoc 2023 |
+|  73 | Day 5 of aoc 2023 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
