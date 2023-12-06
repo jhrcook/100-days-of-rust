@@ -97,4 +97,5 @@ To play with:
 |  71 | Day 3 of aoc 2023 |
 |  72 | Day 4 of aoc 2023 |
 |  73 | Day 5 of aoc 2023 |
+|  74 | Day 6 of aoc 2023 (brute force for puzzle 2 actually worked fine) |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
