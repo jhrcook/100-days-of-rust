@@ -100,4 +100,5 @@ To play with:
 |  74 | Day 6 of aoc 2023 (brute force for puzzle 2 actually worked fine) |
 |  75 | Aoc 2023 day 6 |
 |  76 | Aoc 2023 day 7 was great practice with generics |
+|  77 | Day 9 of aoc 2023 (an easy day) |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
