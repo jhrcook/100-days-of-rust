@@ -102,4 +102,5 @@ To play with:
 |  76 | Aoc 2023 day 7 was great practice with generics |
 |  77 | Day 9 of aoc 2023 (an easy day) |
 |  78 | Day 10 of aoc 2023; still working on part 2, but getting good practice at using the 'petgraph' crate |
+|  79 | Day 11 of aoc 2023 gave me good practice with the 'ndarray' crate |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
