@@ -104,4 +104,5 @@ To play with:
 |  78 | Day 10 of aoc 2023; still working on part 2, but getting good practice at using the 'petgraph' crate |
 |  79 | Day 11 of aoc 2023 gave me good practice with the 'ndarray' crate |
 |  80 | Was stumped by part 2 of day 12 of aoc, but got help and was able to implement the recommended algorithm in rust easily enough |
+|  81 | I completed day 13 of aoc without too much trouble, i'm definitely feeling more competent with rust |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
