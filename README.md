@@ -106,4 +106,5 @@ To play with:
 |  80 | Was stumped by part 2 of day 12 of aoc, but got help and was able to implement the recommended algorithm in rust easily enough |
 |  81 | I completed day 13 of aoc without too much trouble, i'm definitely feeling more competent with rust |
 |  82 | Completed another day of aoc without too much struggling against the language |
+|  83 | Successfully coded the process described in day 15 of aoc in one attempt! |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
