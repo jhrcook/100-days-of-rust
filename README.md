@@ -93,18 +93,22 @@ To play with:
 |  67 | Finished puzzles for day 11 of AoC 2022 but had to look up the hint for part 2 |
 |  68 | Finished puzzles for day 12 of AoC 2022 |
 |  69 | Start Advent of Code 2023 in Rust |
-|  70 | Day 2 of aoc 2023 |
-|  71 | Day 3 of aoc 2023 |
-|  72 | Day 4 of aoc 2023 |
-|  73 | Day 5 of aoc 2023 |
-|  74 | Day 6 of aoc 2023 (brute force for puzzle 2 actually worked fine) |
-|  75 | Aoc 2023 day 6 |
-|  76 | Aoc 2023 day 7 was great practice with generics |
-|  77 | Day 9 of aoc 2023 (an easy day) |
-|  78 | Day 10 of aoc 2023; still working on part 2, but getting good practice at using the 'petgraph' crate |
-|  79 | Day 11 of aoc 2023 gave me good practice with the 'ndarray' crate |
-|  80 | Was stumped by part 2 of day 12 of aoc, but got help and was able to implement the recommended algorithm in rust easily enough |
-|  81 | I completed day 13 of aoc without too much trouble, i'm definitely feeling more competent with rust |
-|  82 | Completed another day of aoc without too much struggling against the language |
-|  83 | Successfully coded the process described in day 15 of aoc in one attempt! |
+|  70 | Day 2 of AoC 2023 |
+|  71 | Day 3 of AoC 2023 |
+|  72 | Day 4 of AoC 2023 |
+|  73 | Day 5 of AoC 2023 |
+|  74 | Day 6 of AoC 2023 (brute force for puzzle 2 actually worked fine) |
+|  75 | AoC 2023 day 6 |
+|  76 | AoC 2023 day 7 was great practice with generics |
+|  77 | Day 9 of AoC 2023 (an easy day) |
+|  78 | Day 10 of AoC 2023; still working on part 2, but getting good practice at using the 'petgraph' crate |
+|  79 | Day 11 of AoC 2023 gave me good practice with the 'ndarray' crate |
+|  80 | Was stumped by part 2 of day 12 of AoC, but got help and was able to implement the recommended algorithm in rust easily enough |
+|  81 | I completed day 13 of AoC without too much trouble, i'm definitely feeling more competent with rust |
+|  82 | Completed another day of AoC without too much struggling against the language |
+|  83 | Successfully coded the process described in day 15 of AoC in one attempt! |
+|  84 | AoC 2023 Day 16 |
+|  85 | I think I'm close to a solution for Day 17 of AoC 2023, but something is slightly off. |
+|  86 | Solved AoC 2023 Day 17. |
+|  87 | Day 18 of AoC 2023. |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
