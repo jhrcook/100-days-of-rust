@@ -112,4 +112,5 @@ To play with:
 |  86 | Solved AoC 2023 Day 17. |
 |  87 | Day 18 of AoC 2023. |
 |  88 | Start day 19 of aoc 2023, but it's pushing the limits of my ability to architect rust code |
+|  89 | Finished day 19 puzzle 1, but it's going to have to change a lot for part 2 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
