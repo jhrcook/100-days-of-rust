@@ -111,4 +111,5 @@ To play with:
 |  85 | I think I'm close to a solution for Day 17 of AoC 2023, but something is slightly off. |
 |  86 | Solved AoC 2023 Day 17. |
 |  87 | Day 18 of AoC 2023. |
+|  88 | Start day 19 of aoc 2023, but it's pushing the limits of my ability to architect rust code |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
