@@ -115,4 +115,5 @@ To play with:
 |  89 | Finished day 19 puzzle 1, but it's going to have to change a lot for part 2 |
 |  90 | Aoc 2023 day 20 part 1 |
 |  91 | Aoc 2023 day 20 part 2 |
+|  92 | Aoc 2023 day 21 part 1 |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
