@@ -117,4 +117,5 @@ To play with:
 |  91 | Aoc 2023 day 20 part 2 |
 |  92 | Aoc 2023 day 21 part 1 |
 |  93 | Read about closures and iterators in the rust book and did the rustlings exercises on smart pointers |
+|  94 | Read the chapter on advanced uses of cargo and workspaces and started the chapter on smart pointers |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
