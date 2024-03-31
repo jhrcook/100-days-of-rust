@@ -119,4 +119,5 @@ To play with:
 |  93 | Read about closures and iterators in the rust book and did the rustlings exercises on smart pointers |
 |  94 | Read the chapter on advanced uses of cargo and workspaces and started the chapter on smart pointers |
 |  95 | Finished reading about smart pointers |
+|  96 | Began ch 16 on "fearless concurrency" and completed appropraite rustlings exercise |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
