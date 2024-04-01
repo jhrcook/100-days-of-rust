@@ -120,4 +120,5 @@ To play with:
 |  94 | Read the chapter on advanced uses of cargo and workspaces and started the chapter on smart pointers |
 |  95 | Finished reading about smart pointers |
 |  96 | Began ch 16 on "fearless concurrency" and completed appropraite rustlings exercise |
+|  97 | Finished ch 16 on fearling concurrency and the corresponding rustlings exercises |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
