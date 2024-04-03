@@ -121,4 +121,5 @@ To play with:
 |  95 | Finished reading about smart pointers |
 |  96 | Began ch 16 on "fearless concurrency" and completed appropraite rustlings exercise |
 |  97 | Finished ch 16 on fearling concurrency and the corresponding rustlings exercises |
+|  98 | Read chater 17 about oop (no paired rustlings) |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
