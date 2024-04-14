@@ -123,4 +123,5 @@ To play with:
 |  97 | Finished ch 16 on fearling concurrency and the corresponding rustlings exercises |
 |  98 | Read chater 17 about oop (no paired rustlings) |
 |  99 | Finished rust book reading about advanced features |
+|  100 | Finished rustlings |
 <!-- [[NEXT DAY]] -- DO NOT REMOVE. -->
